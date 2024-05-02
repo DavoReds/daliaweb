@@ -21,13 +21,12 @@ smart_punctuation = true
 lazy_async_image = true
 
 [extra]
-list_pages = true
+list_pages = false
 default_theme = "dark"
 display_author = false
 twitter_card = true
 header_nav = [
   { url = "/", name_es = "/principal/" },
-  { url = "/about", name_es = "/info/" },
-  { url = "/journal", name_es = "/diario/" },
+  { url = "/info", name_es = "/info/" },
   { url = "/blog", name_es = "/blog/" },
 ]
