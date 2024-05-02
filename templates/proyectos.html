@@ -1,0 +1,17 @@
+{% extends "anemone/templates/section.html" %}
+{% block content %}
+  <h1>{{ section.title | title }}</h1>
+  {{ section.content | safe }}
+  {% set pages = section.pages %}
+  <div class="project-list">
+    {% for page in pages %}
+      <div>
+        <h2>{{ page.title }}</h2>
+        <p>
+          {{ page.summary | safe }}
+          <a href="{{ page.permalink | safe }}#continue-reading">Leer más»</a>
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock content %}

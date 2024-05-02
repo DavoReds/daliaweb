@@ -29,4 +29,5 @@ header_nav = [
   { url = "/", name_es = "/principal/" },
   { url = "/info", name_es = "/info/" },
   { url = "/blog", name_es = "/blog/" },
+  { url = "/proyectos", name_es = "/proyectos/" },
 ]
