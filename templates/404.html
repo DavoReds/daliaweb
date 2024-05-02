@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{% if page %}{{ page.lang }}{% else %}{{ config.default_language }}{% endif %}">
+  <head>{% include "head.html" %}</head>
+  <body>
+    <main>
+      <h1>Error 404</h1>
+      <p>No sé adónde querías ir, pero no lo encuentro.</p>
+      <p>¿Acaso querías visitar estas páginas?</p>
+      <ul>
+        <li>
+          <a href="/">Principal</a>
+        </li>
+        <li>
+          <a href="/info">Información</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      {% include "footer.html" %}
+    </footer>
+  </body>
+</html>
